@@ -1,6 +1,14 @@
-<img src="../assets/chevron.png" (click)="increment()" (contextmenu)="decrement()">
-<img src="../assets/silverware.png" (click)="increment()" (contextmenu)="decrement()">
-<img src="../assets/cake.png" (click)="increment()" (contextmenu)="decrement()">
-<img src="../assets/crown.png" (click)="increment()" (contextmenu)="decrement()">
+<div class="tree1">
+<input type="image" src={{img}} id="img1" (click)="increment($event)" (contextmenu)="decrement($event)">
+<input type="image" src={{silverware}} id="img2" (click)="first_selected_tree1 === true && increment($event)" (contextmenu)=" decrement($event)">
+<input type="image" src={{cake}} id="img3" (click)="second_selected_tree1 === true && increment($event)" (contextmenu)=" decrement($event)">
+<input type="image" src={{crown}} id="img4" (click)="third_selected_tree1 === true && increment($event)" (contextmenu)="decrement($event)">
+</div>
+<div class="tree2">
+<input type="image" src={{logo}} id="img5" (click)="increment($event)" (contextmenu)="decrement($event)">
+<input type="image" src={{scuba}} id="img6" (click)="first_selected_tree2 === true && increment($event)" (contextmenu)="decrement($event)">
+<input type="image" src={{bolt}} id="img7" (click)="second_selected_tree2 === true && increment($event)" (contextmenu)="decrement($event)">
+<input type="image" src={{skull}} id="img8" (click)="third_selected_tree2 === true && increment($event)" (contextmenu)="decrement($event)">
+</div>
 <div class="points">Points:{{points}}</div>
 
