@@ -1,0 +1,145 @@
+.body {
+    width: 100%;
+    height:100%;
+    position: absolute;
+    background-color: black;
+    z-index:-2;
+    
+}
+p{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120%;
+    padding-left: 10%;
+    background-color: #181819;
+}
+#bar1{
+    position: absolute;
+    margin-top: 1em;
+    margin-left: 0%;
+    z-index:-1;
+}
+#bar2{
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 1em;
+    z-index: -1;
+}
+#bar3{
+    position: absolute;
+    margin-left: 14%;
+    margin-top: 1em;
+    z-index: -1;
+}
+#bar4{
+    position: absolute;
+    margin-top: 1em;
+    margin-left: 0%;
+    z-index: -1;
+}
+#bar5{
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 1em;
+    z-index: -1;
+}
+#bar6{
+    position: absolute;
+    margin-left: 14%;
+    margin-top: 1em;
+    z-index: -1;
+}
+#img1{
+
+}
+@media only screen and (max-width : 768px) {
+    .tree1{
+        //margin: 10px;
+       // position: fixed;
+    }
+    #bar1,#bar2,#bar3,#bar4,#bar5,#bar6{
+        display: none;
+    }
+}
+@media only screen and (min-width : 768px) {
+#img2{
+    position: absolute;
+    margin-bottom: 5%;
+    margin-left: 4%;
+}
+#img3{
+    position: absolute;
+    margin-left: 13%;
+}
+#img4{
+    position: absolute;
+    margin-left: 22%;
+}
+#img6{
+    position: absolute;
+    margin-bottom: 5%;
+    margin-left: 4%;
+}
+#img7{
+    position: absolute;
+    margin-left: 13%;
+}
+#img8{
+    position: absolute;
+    margin-left: 22%;
+}
+}
+#t1{
+    color: white;
+     margin-left: 50%;
+     margin-top: 43%;
+     margin-bottom: 50%;
+}
+#t2{
+    color: white;
+    margin-left: 50%;
+}
+.tree_label{
+    float: left;
+    width: 15%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 75%;
+}
+input{
+    display: inline-block;
+}
+h1{
+    color: white;
+}
+.tree1{
+margin-left: 5%;
+}
+.tree2{
+    margin-left: 5%;
+    margin-top: 9%;
+    }
+.tree_container{
+    width: 50%;
+    float:left;
+    margin-top: 5%;
+}
+.points_container{
+    width:20%;
+    margin-right: 2%;
+    margin-top: 6%;
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 112%;
+}
+.points{
+    margin-top: 10%;
+    color: #385066;
+}
+#no_points{
+    color: white;
+  
+    margin-left: 16%;
+}
+#points_Spent{
+    margin-top: 20px;
+}

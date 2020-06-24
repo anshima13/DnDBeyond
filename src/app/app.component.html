@@ -1,14 +1,35 @@
+<div class="body">
+  <p class="title">TitanStar Legends - Rune Mystery Loadout Talent Calculator 9000</p>
+  <div class="tree_label">
+    <div id="t1">TALENT PATH 1</div> 
+    <div id="t2">TALENT PATH 2</div>
+    </div>
+  <div class="tree_container">
+  
 <div class="tree1">
-<input type="image" src={{img}} id="img1" (click)="increment($event)" (contextmenu)="decrement($event)">
-<input type="image" src={{silverware}} id="img2" (click)="first_selected_tree1 === true && increment($event)" (contextmenu)=" decrement($event)">
-<input type="image" src={{cake}} id="img3" (click)="second_selected_tree1 === true && increment($event)" (contextmenu)=" decrement($event)">
-<input type="image" src={{crown}} id="img4" (click)="third_selected_tree1 === true && increment($event)" (contextmenu)="decrement($event)">
+  
+<input type="image" src={{img}} id="img1" (click)="increment($event)" (contextmenu)="remove_second_selected_tree1 === true && decrement($event)">
+<input type="image" id="bar1" src={{bar1}} disabled>
+ <input type="image" src={{silverware}} id="img2" (click)="first_selected_tree1 === true && increment($event)" (contextmenu)="remove_third_selected_tree1 === true && decrement($event)">
+ <input type="image" id="bar2" src={{bar2}} disabled>
+ <input type="image" src={{cake}} id="img3" (click)="second_selected_tree1 === true && increment($event)" (contextmenu)="remove_fourth_selected_tree1 === true && decrement($event)"> 
+<input type="image" id="bar3" src={{bar3}} disabled>
+<input type="image" src={{crown}} id="img4" (click)="third_selected_tree1 === true && increment($event)" (contextmenu)="decrement($event)">  
 </div>
-<div class="tree2">
-<input type="image" src={{logo}} id="img5" (click)="increment($event)" (contextmenu)="decrement($event)">
-<input type="image" src={{scuba}} id="img6" (click)="first_selected_tree2 === true && increment($event)" (contextmenu)="decrement($event)">
-<input type="image" src={{bolt}} id="img7" (click)="second_selected_tree2 === true && increment($event)" (contextmenu)="decrement($event)">
-<input type="image" src={{skull}} id="img8" (click)="third_selected_tree2 === true && increment($event)" (contextmenu)="decrement($event)">
+<div class="tree2"> 
+
+<input type="image" src={{logo}} id="img5" (click)="increment($event)" (contextmenu)="remove_second_selected_tree2 === true && decrement($event)">
+<input type="image" id="bar4" src={{bar4}} disabled>
+<input type="image" src={{scuba}} id="img6" (click)="first_selected_tree2 === true && increment($event)" (contextmenu)=" remove_third_selected_tree2 === true && decrement($event)">
+<input type="image" id="bar5" src={{bar5}} disabled>
+<input type="image" src={{bolt}} id="img7" (click)="second_selected_tree2 === true && increment($event)" (contextmenu)="remove_fourth_selected_tree2 === true && decrement($event)">
+<input type="image" id="bar6" src={{bar6}} disabled>
+<input type="image" src={{skull}} id="img8" (click)="third_selected_tree2 === true && increment($event)" (contextmenu)= "points>3 && decrement($event)">
+</div> 
 </div>
-<div class="points">Points:{{points}}</div>
+<div class="points_container">
+<div class="points"><div id="no_points">{{points}}/6</div><div id="points_spent">Points Spent</div></div>
+</div>
+
+</div>
 
