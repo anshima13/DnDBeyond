@@ -55,6 +55,12 @@ export class AppComponent {
        this.bar4 = localStorage.getItem('bar4');
        this.bar5 = localStorage.getItem('bar5');
        this.bar6 = localStorage.getItem('bar6');
+       this.first_selected_tree1 = JSON.parse(localStorage.getItem(('first_selected_tree1')));
+       this.second_selected_tree1 = JSON.parse(localStorage.getItem('second_selected_tree1'));
+       this.third_selected_tree1 = JSON.parse(localStorage.getItem('third_selected_tree1'));
+       this.first_selected_tree2 = JSON.parse(localStorage.getItem('first_selected_tree2'));
+       this.second_selected_tree2 = JSON.parse(localStorage.getItem('second_selected_tree2'));
+       this.third_selected_tree2 = JSON.parse(localStorage.getItem('third_selected_tree2'));
     } 
   }
   
@@ -141,6 +147,12 @@ this.remove_fourth_selected_tree1 = false;
   localStorage.setItem('bar4',this.bar4);
   localStorage.setItem('bar5',this.bar5);
   localStorage.setItem('bar6',this.bar6);
+  localStorage.setItem('first_selected_tree1',JSON.stringify(this.first_selected_tree1));
+  localStorage.setItem('second_selected_tree1',JSON.stringify(this.second_selected_tree1));
+  localStorage.setItem('third_selected_tree1',JSON.stringify(this.third_selected_tree1));
+  localStorage.setItem('first_selected_tree2',JSON.stringify(this.first_selected_tree2));
+  localStorage.setItem('second_selected_tree2',JSON.stringify(this.second_selected_tree2));
+  localStorage.setItem('third_selected_tree2',JSON.stringify(this.third_selected_tree2));
 }
 changeImagedec(id){
   if(id==="img1"){
