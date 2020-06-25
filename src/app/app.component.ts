@@ -34,8 +34,8 @@ export class AppComponent {
   remove_second_selected_tree2 = true;
   remove_third_selected_tree2 = true;
   remove_fourth_selected_tree2 = true;
-  id:any;
-  event: any;
+  id;
+  event;
   constructor() {
   }
   ngOnInit(){
